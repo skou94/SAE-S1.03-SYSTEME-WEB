@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commandes & Apache</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">SAE S1.03</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="virtualisation.html">Virtualisation</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="commandes_apache.html">Commandes & Apache</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gantt.html">Diagramme de Gantt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mt-5 pt-5">
+        <section class="my-5">
+            <h1 class="text-center">Commandes & Configuration Apache</h1>
+            <p>Pour configurer un serveur web avec Apache, voici quelques commandes utilisées :</p>
+            <ul>
+                <li><code>apt-get install apache2</code> : Installation du serveur Apache.</li>
+                <li><code>sudo systemctl start apache2</code> : Démarrage du service Apache.</li>
+                <li><code>sudo systemctl enable apache2</code> : Activation automatique au démarrage.</li>
+                <li><code>nano /etc/apache2/apache2.conf</code> : Édition du fichier de configuration principal.</li>
+            </ul>
+            <p>Personnalisation de la ligne de commande :</p>
+            <ul>
+                <li><code>nano /etc/bash.bashrc</code> : Modification pour inclure des informations personnalisées dans l'invite de commande.</li>
+                <li>Ajout de la ligne <code>PS1='\t \u@\h:\w$ '</code> pour afficher l'heure, l'utilisateur et le chemin actuel.</li>
+            </ul>
+            <div class="container mt-4">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="text-center">
+                            <img src="css/site/apache_terminal.png" alt="Exemple de configuration Apache" class="img-fluid rounded shadow-sm" style="max-width: 100%; height: auto;">
+                            <p class="mt-2 text-muted">Configuration du terminal Apache</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-center">
+                            <img src="css/site/site.png" alt="Site deployer a l'aide d'apache" class="img-fluid rounded shadow-sm" style="max-width: 100%; height: auto;">
+                            <p class="mt-2 text-muted">Site déployé avec Apache</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-center">
+                            <img src="css/site/commande.png" alt="personalisation commande" class="img-fluid rounded shadow-sm" style="max-width: 100%; height: auto;">
+                            <p class="mt-2 text-muted">Ligne modifier pour personaliser</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-center">
+                            <img src="css/site/personalise.png" alt=" commande" class="img-fluid rounded shadow-sm" style="max-width: 100%; height: auto;">
+                            <p class="mt-2 text-muted">application commande</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-center">
+                            <img src="css/site/config webstorm.png" alt="configuration webstorm" class="img-fluid rounded shadow-sm" style="max-width: 100%; height: auto;">
+                            <p class="mt-2 text-muted">Configuration webstorm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2025 - Réalisé par Diallo Sékou-Oumar, Tchana Owen, Sivakumar Arvinth</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
